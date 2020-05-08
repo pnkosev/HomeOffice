@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Shrink</title>
+    <style>
+        div {
+            width: 100px;
+            height: 10vh;
+            margin: 1em;
+            background-color: blue;
+            color: red;
+            text-align: center;
+            border: 1px solid black;
+            border-radius: 0.25em;
+        }
+    </style>
+</head>
+<body>
+    <section style="display: flex">
+        <div>DIV1</div>
+        <div style="flex-shrink: 7;">DIV2</div>
+        <div style="flex-shrink: 0;">DIV3</div>
+        <div>DIV4</div>
+        <div style="flex-shrink: 9;">DIV5</div>
+        <div>DIV6</div>
+        <div style="flex-shrink: 8;">DIV7</div>
+        <div style="flex-shrink: 10;">DIV8</div>
+        <div>DIV9</div>
+        <div>DIV10</div>
+    </section>
+</body>
+</html>

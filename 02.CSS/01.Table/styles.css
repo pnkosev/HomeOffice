@@ -1,0 +1,50 @@
+.container {
+    position: absolute;
+    top: 36%;
+    left: 36%;
+    display: flex;
+    background-color: yellow;
+    width: auto;
+    height: 20vh;
+    padding: 0.5em;
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    min-width: 300px;
+}
+
+.right {
+    display: flex;
+    flex-direction: row;
+}
+
+.row {
+    height: 5vh;
+    padding: 0.5em;
+}
+
+.column {
+    padding: 0.5em;
+}
+
+.grey {
+    background-color: grey;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.red {
+    background-color: red;
+}
+
+.green {
+    background-color: green;
+}

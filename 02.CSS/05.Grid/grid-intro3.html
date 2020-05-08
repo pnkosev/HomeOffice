@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intro to Grid</title>
+    <style>
+        .grid-container {
+            display: inline-grid;
+            grid-template-columns: auto auto;
+            gap: 2em;
+            background-color: #2196F3;
+            padding: 10px;
+        }
+
+        .grid-item {
+            min-width: 200px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border: 1px solid rgba(0, 0, 0, 0.8);
+            padding: 20px;
+            font-size: 30px;
+            text-align: center;
+        }
+
+        div.grid-item:nth-child(1) {
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
+
+        div.grid-item:nth-child(7) {
+            grid-column: 2;
+            grid-row-start: 4;
+            grid-row-end: 6;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>The display Property:</h1>
+
+    <div class="grid-container">
+        <div class="grid-item">1</div>
+        <div class="grid-item">2</div>
+        <div class="grid-item">3</div>
+        <div class="grid-item">4</div>
+        <div class="grid-item">5</div>
+        <div class="grid-item">6</div>
+        <div class="grid-item">7</div>
+        <div class="grid-item">8</div>
+    </div>
+
+    <p>Set the <em>display</em> property to <em>inline-grid</em> to make an inline grid container.</p>
+
+
+</body>
+
+</html>

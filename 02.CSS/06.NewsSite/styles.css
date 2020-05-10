@@ -1,11 +1,15 @@
+html {
+    font-family: "Helvetica", sans-serif;
+    font-size: 17px;
+    line-height: 1.5;
+}
+
 body {
     margin: 0;
     display: flex;
     flex-direction: column;
     height: 100%;
     background-color:  whitesmoke;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 1rem;
 }
 
 .header-holder {
@@ -58,14 +62,12 @@ ul > li:hover {
 }
 
 .header-menu > span {
-    margin-top: 1rem;
     text-align: center;
     padding: 2rem;
     flex: 1 2 220px;
 }
 
 .header-menu .logo-holder {
-    margin-top: 1rem;
     text-align: center;
     flex: 2 1 220px;
 }
@@ -76,7 +78,6 @@ ul > li:hover {
 }
 
 .header-menu > form {
-    margin-top: 1rem;
     padding: 2rem;
     flex: 1 2 220px;
 }
@@ -102,10 +103,15 @@ nav > ul {
 nav > ul > li {
     margin: 0;
     margin-right: 1rem;
+    text-align: center;
 }
 
 nav > ul > li:last-child {
     margin-right: 0;
+}
+
+ul > li:hover {
+    border-bottom: 2px solid red;
 }
 
 main {
@@ -123,8 +129,8 @@ main {
 }
 
 .article-item {
-    margin-top: 2rem;
-    border-bottom: 2px solid black;
+    padding: 1rem;
+    border-bottom: 0.1px solid black;
 }
 
 .article-item:last-child {
@@ -132,7 +138,20 @@ main {
 }
 
 .title {
+    margin: 0;
     text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.title > a {
+    color: black;
+    text-decoration: none;
+}
+
+div.date-author {
+    font-size: 0.75rem;
+    margin-bottom: 1rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .align-left {
@@ -159,12 +178,23 @@ main {
 
 .article-content > p {
     margin: 0;
-    padding: 1rem;
 } 
 
 .aside {
     flex: 1 2 250px;
-    padding: 2rem;
+    margin: 1rem;
+    height: 100%;
+    background-color: rgb(243, 248, 250);
+    border: 0.1px solid rgb(211, 211, 211);
+}
+
+.aside-grid-container {
+    padding: 1rem;
+    border-bottom: 0.1px solid black;
+}
+
+.aside-grid-container:last-child {
+    border-bottom: none;
 }
 
 footer {

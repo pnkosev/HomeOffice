@@ -4,6 +4,12 @@ html {
     line-height: 1.5;
 }
 
+@media only screen and (max-width: 320px) {
+    html {
+        font-size: 13px;
+    }
+}
+
 body {
     margin: 0;
     display: flex;
@@ -78,7 +84,7 @@ ul > li:hover {
 }
 
 .header-menu > form {
-    padding: 2rem;
+    padding: 2rem 1rem;
     flex: 1 2 220px;
 }
 
@@ -88,6 +94,7 @@ ul > li:hover {
 
 .header-menu input {
     margin: 0;
+    width: 150px;
 }
 
 nav > ul {

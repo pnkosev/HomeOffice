@@ -2,7 +2,7 @@
     position: absolute;
     top: 30%;
     left: 40%;
-    width: 360px;
+    max-width: 360px;
     /* height: 30vh; */ 
     display: flex;
     /* flex-direction: column; */

@@ -4,12 +4,6 @@ html {
     line-height: 1.5;
 }
 
-@media only screen and (max-width: 320px) {
-    html {
-        font-size: 13px;
-    }
-}
-
 body {
     margin: 0;
     display: flex;
@@ -209,4 +203,22 @@ footer {
     background-color: black;
     color: white;
     text-align: center;
+}
+
+@media only screen and (max-width: 420px) {
+    html {
+        font-size: 15px;
+    }
+    
+    .align-left,
+    .align-right {
+        width: 90%;
+        height: auto;
+    }
+
+    .header-toolbar {
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+    }
 }
